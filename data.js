@@ -1101,5 +1101,834 @@ const lectures = [
         ]
       }
     ]
+  },
+  // --- DAY 011 ---
+  {
+    day: 11,
+    dayFormatted: "DAY 011",
+    title: "지하철 환승",
+    videoId: "qb1JB2TDT7E",
+    dialogues: [
+      {
+        id: "d11_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "이쪽이 수서역 가는 길이 맞나요?",
+        en: "Is this the right way to Suseo Station?",
+        time: "00:44",
+        seconds: 44,
+        note: "Is this the right way to ~? : 이쪽이 ~로 가는 길이 맞나요? (방향 확인 기본 표현)",
+        extras: [
+          { en: "Is this the right way to Niagara Falls?", kr: "이쪽이 나이아가라 폭포 가는 길이 맞나요?" },
+          { en: "Could you show me the way to City Hall?", kr: "시청 가는 길 좀 알려주시겠어요?" }
+        ]
+      },
+      {
+        id: "d11_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "아니요. 반대편으로 가셔야 합니다.",
+        en: "No. You have to go to the other side.",
+        time: "01:29",
+        seconds: 89,
+        note: "to the other side : 반대편으로 / on the other side : 반대편에서",
+        extras: [
+          { en: "You can take bus number 9 on the other side.", kr: "반대편에서 9번 버스를 타시면 됩니다." }
+        ]
+      },
+      {
+        id: "d11_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "고맙습니다. 열차를 갈아타야 하나요?",
+        en: "Thank you. Do I have to change trains?",
+        time: "01:54",
+        seconds: 114,
+        note: "change trains : 열차를 갈아타다 (환승하다) / transfer to ~ : ~로 환승하다",
+        extras: [
+          { en: "How many times do I have to change trains?", kr: "열차를 몇 번 갈아타야 하나요?" },
+          { en: "You can transfer to line number 5.", kr: "5호선으로 갈아타시면 됩니다." }
+        ]
+      },
+      {
+        id: "d11_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "네. 교대역에서 3호선으로 갈아타세요.",
+        en: "Yes. Transfer to line number 3 at Seoul National University of Education.",
+        time: "02:30",
+        seconds: 150,
+        note: "transfer to line number ~ : ~호선으로 환승하다",
+        extras: []
+      },
+      {
+        id: "d11_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "정말 친절하시네요. 너무 감사합니다.",
+        en: "That's so nice of you. Thanks a million.",
+        time: "02:38",
+        seconds: 158,
+        note: "That's so nice of you : 정말 친절하시네요 / Thanks a million : 백만 번 감사해요 (대단히 감사합니다)",
+        extras: [
+          { en: "That's so sweet of you.", kr: "정말 자상하시네요." }
+        ]
+      },
+      {
+        id: "d11_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "천만에요. 도움이 돼서 기뻐요.",
+        en: "Not at all. It's my pleasure to help you.",
+        time: "03:22",
+        seconds: 202,
+        note: "Not at all : 천만에요 / It's my pleasure to ~ : ~해서 제 기쁨입니다",
+        extras: [
+          { en: "Don't mention it.", kr: "별말씀을요." }
+        ]
+      }
+    ]
+  },
+
+  // --- DAY 012 ---
+  {
+    day: 12,
+    dayFormatted: "DAY 012",
+    title: "생일파티 계획",
+    videoId: "pEcK8FmcuS4",
+    dialogues: [
+      {
+        id: "d12_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "금요일에 조이의 생일파티를 할 거야. 올 수 있어?",
+        en: "I'm throwing a birthday party for Joy on Friday. Can you come?",
+        time: "00:46",
+        seconds: 46,
+        note: "throw a party / have a party : 파티를 열다",
+        extras: [
+          { en: "Let's have a party at my place.", kr: "우리 집에서 파티하자." }
+        ]
+      },
+      {
+        id: "d12_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "농담해? 무슨 일이 있어도 참석해야지.",
+        en: "Are you kidding? I wouldn't miss it for the world.",
+        time: "01:09",
+        seconds: 69,
+        note: "Are you kidding? : 농담해? / wouldn't miss it for the world : 무슨 일이 있어도 꼭 갈게 (놓치지 않을게)",
+        extras: [
+          { en: "I'm joking. / I'm kidding.", kr: "농담이야." }
+        ]
+      },
+      {
+        id: "d12_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "대학교 동창들 몇 명 초대할 거야.",
+        en: "I'll invite a few friends from university.",
+        time: "01:47",
+        seconds: 107,
+        note: "invite somebody / have somebody over : ~를 초대하다",
+        extras: [
+          { en: "I'm having a few friends over tonight.", kr: "오늘 저녁에 친구 몇 명을 초대할 거야." },
+          { en: "Thanks for having me.", kr: "초대해 주셔서 감사합니다." }
+        ]
+      },
+      {
+        id: "d12_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "네가 괜찮다면 몇 명 연락해 볼게.",
+        en: "I can make contact with some guys if it's okay.",
+        time: "02:24",
+        seconds: 144,
+        note: "make contact with ~ / keep in touch with ~ : ~와 연락하다, 접촉하다",
+        extras: [
+          { en: "I'll keep in touch.", kr: "계속 연락할게." }
+        ]
+      },
+      {
+        id: "d12_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "고맙지만 조촐하게 하려고.",
+        en: "Thanks, but we're having a small party.",
+        time: "02:51",
+        seconds: 171,
+        note: "have a small party : 조촐하게 파티를 열다",
+        extras: [
+          { en: "We're having a small barbecue.", kr: "조촐하게 바비큐 파티를 하려고 해." }
+        ]
+      },
+      {
+        id: "d12_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "그럼 더 좋지. 재미있겠다.",
+        en: "That sounds even better. It sounds like fun.",
+        time: "03:19",
+        seconds: 199,
+        note: "That sounds even better : 그게 훨씬 더 낫겠다 / It sounds like fun : 재미있겠다",
+        extras: [
+          { en: "The more, the merrier.", kr: "사람이 많을수록 더 좋지." }
+        ]
+      }
+    ]
+  },
+
+  // --- DAY 013 ---
+  {
+    day: 13,
+    dayFormatted: "DAY 013",
+    title: "오늘 휴가 냈어",
+    videoId: "4IyK0lUcdYA",
+    dialogues: [
+      {
+        id: "d13_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "여보, 일어나. 오늘 일 안 해?",
+        en: "Honey, wake up. Don't you have work today?",
+        time: "00:45",
+        seconds: 45,
+        note: "wake up : 잠에서 깨다, 정신 차리다 / have work : 일(출근)이 있다",
+        extras: [
+          { en: "Wake up and listen carefully.", kr: "정신 차리고 잘 들어." }
+        ]
+      },
+      {
+        id: "d13_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "내가 말 안 했나? 쉬는 날이야.",
+        en: "Didn't I tell you? I have the day off.",
+        time: "01:14",
+        seconds: 74,
+        note: "Didn't I tell you? : 내가 말 안 했어? / have the day off (take the day off) : 하루 쉬다(휴가 내다)",
+        extras: [
+          { en: "It's my day off. / I'm off today.", kr: "오늘 쉬는 날이야." }
+        ]
+      },
+      {
+        id: "d13_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "아니, 그런 말 한 적 없는데.",
+        en: "No, you didn't tell me that.",
+        time: "01:41",
+        seconds: 101,
+        note: "You didn't tell me that : 나한테 그런 얘기 안 했어",
+        extras: []
+      },
+      {
+        id: "d13_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "요즘 자주 깜빡하네. 나들이 좀 갈까?",
+        en: "I've been so forgetful lately. Shall we go on a picnic?",
+        time: "01:49",
+        seconds: 109,
+        note: "forgetful : 잘 깜빡하는, 건망증이 있는 / go on a picnic : 소풍 가다",
+        extras: [
+          { en: "I've become so forgetful in recent years.", kr: "최근 몇 년 사이에 건망증이 심해졌어." },
+          { en: "go on a trip / go on a business trip / go on a diet", kr: "여행 가다 / 출장 가다 / 다이어트하다" }
+        ]
+      },
+      {
+        id: "d13_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "좋지! 우리 데이트한 지 얼마 만이야?",
+        en: "Great! How long has it been since we had a date?",
+        time: "02:30",
+        seconds: 150,
+        note: "How long has it been since ~? : ~한 지 얼마나 됐지?",
+        extras: [
+          { en: "How long has it been since you saw your parents?", kr: "부모님 뵌 지 얼마나 됐어?" },
+          { en: "I want to date her.", kr: "그녀와 데이트하고 싶어." }
+        ]
+      },
+      {
+        id: "d13_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "미안, 보고서 쓰느라 좀 바빴어.",
+        en: "Sorry. I've been busy writing some reports.",
+        time: "03:19",
+        seconds: 199,
+        note: "be busy + 동사-ing / be busy with + 명사 : ~하느라 바쁘다",
+        extras: [
+          { en: "I was busy taking care of my kids.", kr: "아이들 돌보느라 바빴어." },
+          { en: "I was busy with my English homework.", kr: "영어 숙제 하느라 바빴어." }
+        ]
+      }
+    ]
+  },
+
+  // --- DAY 014 ---
+  {
+    day: 14,
+    dayFormatted: "DAY 014",
+    title: "온라인 게임",
+    videoId: "6iyok_CPWkc",
+    dialogues: [
+      {
+        id: "d14_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "주말에 뭐 하고 놀았어?",
+        en: "What did you do over the weekend?",
+        time: "00:42",
+        seconds: 42,
+        note: "over the weekend : 주말 동안에",
+        extras: [
+          { en: "Did you have a good weekend?", kr: "주말 잘 보냈어?" }
+        ]
+      },
+      {
+        id: "d14_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "밤새 온라인 게임에 푹 빠져 있었어.",
+        en: "I was hooked on online games all night.",
+        time: "01:05",
+        seconds: 65,
+        note: "be hooked on ~ : ~에 푹 빠져있다, 중독되다 / all night : 밤새도록",
+        extras: [
+          { en: "I'm hooked on this drama.", kr: "나 이 드라마에 푹 빠졌어." }
+        ]
+      },
+      {
+        id: "d14_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "아직도 게임을 좋아해? 나잇값 좀 해라.",
+        en: "You still play games? Act your age.",
+        time: "01:45",
+        seconds: 105,
+        note: "Act your age : 나이에 맞게 행동해라, 나잇값 좀 해라",
+        extras: [
+          { en: "Grow up!", kr: "철 좀 들어라!" }
+        ]
+      },
+      {
+        id: "d14_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "스트레스 풀기에는 게임이 최고야.",
+        en: "There's nothing like games to relieve stress.",
+        time: "02:15",
+        seconds: 135,
+        note: "There is nothing like ~ to ... : …하는 데는 ~만한 게 없다 / relieve stress : 스트레스를 해소하다",
+        extras: [
+          { en: "There's nothing like hot soup on a cold day.", kr: "추운 날엔 따뜻한 국물만 한 게 없어." }
+        ]
+      },
+      {
+        id: "d14_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "그래도 시간 낭비하지 마.",
+        en: "Even so, don't waste your time.",
+        time: "02:48",
+        seconds: 168,
+        note: "Even so : 그렇다 하더라도, 그래도 / waste one's time : 시간을 낭비하다",
+        extras: []
+      },
+      {
+        id: "d14_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "알았어. 잔소리 좀 그만해.",
+        en: "Okay. Stop nagging me.",
+        time: "03:12",
+        seconds: 192,
+        note: "nag somebody : ~에게 바가지 긁다, 잔소리하다",
+        extras: [
+          { en: "Stop nagging at me.", kr: "잔소리 좀 그만 늘어놓아." }
+        ]
+      }
+    ]
+  },
+
+  // --- DAY 015 ---
+  {
+    day: 15,
+    dayFormatted: "DAY 015",
+    title: "갑작스러운 회식",
+    videoId: "tkQ-76qKpZM",
+    dialogues: [
+      {
+        id: "d15_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "오늘 밤에 한잔하러 갈래?",
+        en: "Do you want to go grab a drink tonight?",
+        time: "00:44",
+        seconds: 44,
+        note: "grab a drink / grab a bite : 가볍게 한잔하다 / 간단히 먹다",
+        extras: [
+          { en: "Let's go grab a coffee.", kr: "커피 한잔하러 가자." }
+        ]
+      },
+      {
+        id: "d15_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "오늘 회식이 잡혀 있어.",
+        en: "We have a company dinner scheduled today.",
+        time: "01:12",
+        seconds: 72,
+        note: "company dinner : 회식 / have something scheduled : ~가 예정되어 있다",
+        extras: []
+      },
+      {
+        id: "d15_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "갑자기 잡힌 거야?",
+        en: "Was it arranged on short notice?",
+        time: "01:46",
+        seconds: 106,
+        note: "on short notice : 촉박하게, 갑작스럽게",
+        extras: [
+          { en: "Thanks for coming on short notice.", kr: "갑작스러운 요청에도 와줘서 고마워." }
+        ]
+      },
+      {
+        id: "d15_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "응, 팀장님이 갑자기 결정하셨어.",
+        en: "Yeah, our team manager made a last-minute decision.",
+        time: "02:18",
+        seconds: 138,
+        note: "last-minute decision : 막판(임박한) 결정",
+        extras: [
+          { en: "a last-minute change", kr: "마지막 순간의 변경" }
+        ]
+      },
+      {
+        id: "d15_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "빠질 수 없는 자리야?",
+        en: "Can't you get out of it?",
+        time: "02:50",
+        seconds: 170,
+        note: "get out of ~ : (약속, 의무 등에서) 빠져나오다, 피하다",
+        extras: [
+          { en: "I can't get out of this meeting.", kr: "이 회의에서 빠질 수가 없어." }
+        ]
+      },
+      {
+        id: "d15_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "필수 참석이라 어쩔 수 없어.",
+        en: "Attendance is mandatory, so I have no choice.",
+        time: "03:15",
+        seconds: 195,
+        note: "mandatory : 의무적인, 필수의 / have no choice : 선택의 여지가 없다",
+        extras: []
+      }
+    ]
+  },
+
+  // --- DAY 016 ---
+  {
+    day: 16,
+    dayFormatted: "DAY 016",
+    title: "길을 잃었어",
+    videoId: "sDqJhETsGKI",
+    dialogues: [
+      {
+        id: "d16_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "어디야? 약속 시간에 늦었잖아.",
+        en: "Where are you? You're late for the appointment.",
+        time: "00:43",
+        seconds: 43,
+        note: "be late for ~ : ~에 늦다 / appointment : 약속",
+        extras: []
+      },
+      {
+        id: "d16_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "미안해. 근처에서 완전히 길을 잃었어.",
+        en: "I'm sorry. I got totally lost near here.",
+        time: "01:08",
+        seconds: 68,
+        note: "get lost : 길을 잃다 / totally : 완전히",
+        extras: [
+          { en: "I lost my way.", kr: "길을 잃었어요." }
+        ]
+      },
+      {
+        id: "d16_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "주변에 눈에 띄는 랜드마크 있어?",
+        en: "Are there any landmarks around you?",
+        time: "01:42",
+        seconds: 102,
+        note: "landmark : 눈에 띄는 건물이나 지형물",
+        extras: []
+      },
+      {
+        id: "d16_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "큰 주유소 앞에 서 있어.",
+        en: "I'm standing in front of a big gas station.",
+        time: "02:11",
+        seconds: 131,
+        note: "in front of ~ : ~의 앞에 / gas station : 주유소",
+        extras: []
+      },
+      {
+        id: "d16_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "거기 가만히 있어. 내가 데리러 갈게.",
+        en: "Stay right there. I'll come pick you up.",
+        time: "02:40",
+        seconds: 160,
+        note: "Stay right there : 거기 그대로 있어 / come pick somebody up : 데리러 가다",
+        extras: []
+      },
+      {
+        id: "d16_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "정말 고마워. 기다리고 있을게.",
+        en: "Thanks a lot. I'll be waiting for you.",
+        time: "03:05",
+        seconds: 185,
+        note: "wait for somebody : ~를 기다리다",
+        extras: []
+      }
+    ]
+  },
+
+  // --- DAY 017 ---
+  {
+    day: 17,
+    dayFormatted: "DAY 017",
+    title: "다이어트",
+    videoId: "UbQfQqVbxkk",
+    dialogues: [
+      {
+        id: "d17_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "요즘 몸매가 정말 날씬해졌어.",
+        en: "You've gotten really in shape these days.",
+        time: "00:45",
+        seconds: 45,
+        note: "get in shape / be in shape : 몸매를 가꾸다, 좋은 몸 상태를 유지하다",
+        extras: [
+          { en: "be out of shape", kr: "운동 부족이다, 체형이 무너지다" }
+        ]
+      },
+      {
+        id: "d17_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "식단을 조절하고 헬스장에 꾸준히 다니고 있어.",
+        en: "I've been watching my diet and hitting the gym regularly.",
+        time: "01:15",
+        seconds: 75,
+        note: "watch one's diet : 식단을 조절하다 / hit the gym : 헬스장에 가다",
+        extras: []
+      },
+      {
+        id: "d17_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "효과가 대단한데! 비결이 뭐야?",
+        en: "It really paid off! What's your secret?",
+        time: "01:50",
+        seconds: 110,
+        note: "pay off : 성과를 거두다, 빛을 발하다",
+        extras: [
+          { en: "Hard work pays off.", kr: "노력은 보상을 받는 법이다." }
+        ]
+      },
+      {
+        id: "d17_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "야식을 끊은 게 가장 큰 비결이야.",
+        en: "Cutting out late-night snacks was the biggest factor.",
+        time: "02:22",
+        seconds: 142,
+        note: "cut out ~ : ~을 끊다(중단하다) / late-night snacks : 야식",
+        extras: []
+      },
+      {
+        id: "d17_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "나도 독하게 마음먹고 시작해야겠어.",
+        en: "I should make up my mind and get started too.",
+        time: "02:54",
+        seconds: 174,
+        note: "make up one's mind : 결심하다, 마음먹다",
+        extras: []
+      },
+      {
+        id: "d17_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "작심삼일로 끝나지 않게 조심해.",
+        en: "Make sure your resolution doesn't fizzle out.",
+        time: "03:20",
+        seconds: 200,
+        note: "fizzle out : 흐지부지 끝나다 (작심삼일)",
+        extras: []
+      }
+    ]
+  },
+
+  // --- DAY 018 ---
+  {
+    day: 18,
+    dayFormatted: "DAY 018",
+    title: "날씨가 왜 이래",
+    videoId: "PZddm9C3HcI",
+    dialogues: [
+      {
+        id: "d18_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "하늘 좀 봐. 금방이라도 비가 쏟아질 것 같아.",
+        en: "Look at the sky. It looks like it's going to pour.",
+        time: "00:44",
+        seconds: 44,
+        note: "pour : (비가) 퍼붓다, 쏟아지다",
+        extras: [
+          { en: "It's raining cats and dogs.", kr: "비가 억수같이 쏟아진다." }
+        ]
+      },
+      {
+        id: "d18_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "일기예보에서 오늘 맑다고 했는데.",
+        en: "The weather forecast said it would be sunny today.",
+        time: "01:10",
+        seconds: 70,
+        note: "weather forecast : 일기예보",
+        extras: []
+      },
+      {
+        id: "d18_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "날씨가 정말 변덕스럽네.",
+        en: "The weather is so unpredictable.",
+        time: "01:42",
+        seconds: 102,
+        note: "unpredictable : 예측할 수 없는, 변덕스러운",
+        extras: [
+          { en: "freak weather", kr: "이상 기후" }
+        ]
+      },
+      {
+        id: "d18_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "우산 챙겨왔어?",
+        en: "Did you bring an umbrella with you?",
+        time: "02:14",
+        seconds: 134,
+        note: "bring ~ with you : ~을 챙겨오다",
+        extras: []
+      },
+      {
+        id: "d18_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "아니, 두고 왔어. 편의점에서 하나 사야겠어.",
+        en: "No, I left it behind. I should buy one at the convenience store.",
+        time: "02:45",
+        seconds: 165,
+        note: "leave something behind : 뒤에 두고 오다 / convenience store : 편의점",
+        extras: []
+      },
+      {
+        id: "d18_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "내 우산 같이 쓰자. 내가 씌워줄게.",
+        en: "We can share mine. I'll share an umbrella with you.",
+        time: "03:15",
+        seconds: 195,
+        note: "share an umbrella with ~ : ~와 우산을 같이 쓰다",
+        extras: []
+      }
+    ]
+  },
+
+  // --- DAY 019 ---
+  {
+    day: 19,
+    dayFormatted: "DAY 019",
+    title: "느낌이 필요해",
+    videoId: "BDUIAVy82nE",
+    dialogues: [
+      {
+        id: "d19_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "새 프로젝트 아이디어가 전혀 안 떠올라.",
+        en: "I can't come up with any ideas for the new project.",
+        time: "00:43",
+        seconds: 43,
+        note: "come up with ~ : (아이디어 등을) 떠올리다, 생각해 내다",
+        extras: []
+      },
+      {
+        id: "d19_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "너무 부담 갖지 말고 머리를 식혀봐.",
+        en: "Don't put too much pressure on yourself. Clear your head.",
+        time: "01:12",
+        seconds: 72,
+        note: "put pressure on ~ : ~에게 부담을 주다 / clear one's head : 머리를 식히다",
+        extras: []
+      },
+      {
+        id: "d19_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "마감일이 코앞이라 마음이 급해.",
+        en: "The deadline is right around the corner, so I'm anxious.",
+        time: "01:48",
+        seconds: 108,
+        note: "right around the corner : (시간, 공간적으로) 코앞에 닥친",
+        extras: []
+      },
+      {
+        id: "d19_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "바람이나 쐬러 나가자. 영감을 얻을 수도 있잖아.",
+        en: "Let's go get some fresh air. You might get some inspiration.",
+        time: "02:20",
+        seconds: 140,
+        note: "get fresh air : 바람을 쐬다 / get inspiration : 영감을 얻다",
+        extras: []
+      },
+      {
+        id: "d19_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "좋아. 기분 전환이 필요하긴 해.",
+        en: "Sounds good. I definitely need a change of pace.",
+        time: "02:51",
+        seconds: 171,
+        note: "a change of pace : 기분 전환, 일상의 변화",
+        extras: []
+      },
+      {
+        id: "d19_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "내가 맛있는 커피 한잔 살게.",
+        en: "Coffee is on me. Let's go.",
+        time: "03:16",
+        seconds: 196,
+        note: "Something is on me : ~는 내가 낼게(살게)",
+        extras: [
+          { en: "It's my treat.", kr: "내가 대접할게." }
+        ]
+      }
+    ]
+  },
+
+  // --- DAY 020 ---
+  {
+    day: 20,
+    dayFormatted: "DAY 020",
+    title: "야식 먹고 싶어",
+    videoId: "DrF9G5LpQLY",
+    dialogues: [
+      {
+        id: "d20_1",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "이 시간에 갑자기 치킨이 너무 당겨.",
+        en: "I'm craving fried chicken all of a sudden at this hour.",
+        time: "00:44",
+        seconds: 44,
+        note: "crave ~ : ~가 간절히 당기다(먹고 싶다) / all of a sudden : 갑자기",
+        extras: [
+          { en: "I have a craving for pizza.", kr: "피자가 너무 당겨." }
+        ]
+      },
+      {
+        id: "d20_2",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "지금 밤 11시야. 살찌고 싶어?",
+        en: "It's 11 PM now. Do you want to gain weight?",
+        time: "01:10",
+        seconds: 70,
+        note: "gain weight : 살이 찌다",
+        extras: []
+      },
+      {
+        id: "d20_3",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "오늘 하루 종일 일하느라 힘들었단 말이야.",
+        en: "I've had a rough day working all day long.",
+        time: "01:45",
+        seconds: 105,
+        note: "have a rough day : 힘든 하루를 보내다 / all day long : 하루 종일",
+        extras: []
+      },
+      {
+        id: "d20_4",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "내일 아침에 얼굴 붓는 건 어쩌려고 그래?",
+        en: "What about your face getting bloated tomorrow morning?",
+        time: "02:18",
+        seconds: 138,
+        note: "face getting bloated / puffy : 얼굴이 붓다",
+        extras: []
+      },
+      {
+        id: "d20_5",
+        role: "A",
+        roleLabel: "A (여성)",
+        kr: "맛있게 먹으면 0칼로리잖아!",
+        en: "Guilt-free calories don't count!",
+        time: "02:50",
+        seconds: 170,
+        note: "don't count : 포함되지 않는다 (위트 있는 표현)",
+        extras: []
+      },
+      {
+        id: "d20_6",
+        role: "B",
+        roleLabel: "B (남성)",
+        kr: "못 말린다 정말. 반반으로 시키자.",
+        en: "There's no stopping you. Let's order half and half.",
+        time: "03:15",
+        seconds: 195,
+        note: "There is no stopping you : 넌 정말 못 말린다 / half and half : 반반",
+        extras: []
+      }
+    ]
   }
 ];
