@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영어회화 100일의 기적 - AI 말하기 트레이너</title>
+  <title>영어회화 100일의 기적 2권 - AI 말하기 트레이너</title>
   <style>
     :root {
-      --primary: #ec4899;
-      --primary-hover: #db2777;
-      --primary-light: #fce7f3;
-      --bg: #f8fafc;
+      --primary: #e11d48; /* 시즌 2 시그니처 로즈/코랄 */
+      --primary-hover: #be123c;
+      --primary-light: #fff1f2;
+      --bg: #fffbfb;
       --card-bg: #ffffff;
       --text-main: #1e293b;
       --text-sub: #64748b;
-      --border: #e2e8f0;
-      --role-a: #f43f5e;
-      --role-b: #0ea5e9;
+      --border: #fecdd3;
+      --role-a: #f43f5e; /* 여성 화자 */
+      --role-b: #0284c7; /* 남성 화자 */
+      --success: #059669;
+      --danger: #e11d48;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,7 +36,7 @@
       background: var(--card-bg);
       padding: 24px;
       border-radius: 20px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+      box-shadow: 0 4px 16px rgba(225, 29, 72, 0.05);
       margin-bottom: 20px;
       border: 1px solid var(--border);
     }
@@ -51,23 +53,26 @@
     h1 {
       font-size: 1.45rem;
       font-weight: 800;
-      color: #0f172a;
-    }
-
-    .lecture-select-box {
+      color: #9f1239;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
+    .lecture-select-box {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
     select {
-      padding: 8px 14px;
+      padding: 8px 12px;
       font-size: 0.95rem;
       font-weight: 600;
       border-radius: 10px;
       border: 2px solid var(--primary);
       background-color: #fff;
-      color: var(--primary-hover);
+      color: var(--primary);
       outline: none;
       cursor: pointer;
     }
@@ -78,12 +83,13 @@
       display: inline-block;
       margin-top: 10px;
       font-size: 0.8rem;
-      padding: 4px 10px;
-      background: #f1f5f9;
+      padding: 4px 12px;
+      background: #fff1f2;
       border-radius: 20px;
-      color: #475569;
+      color: #9f1239;
     }
 
+    /* 툴바 */
     .toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -97,13 +103,13 @@
       border: 1px solid var(--border);
     }
 
-    .btn-group { display: flex; flex-wrap: wrap; gap: 8px; }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
     button {
       cursor: pointer;
       border: none;
       border-radius: 8px;
-      padding: 9px 14px;
+      padding: 9px 15px;
       font-size: 0.9rem;
       font-weight: 600;
       transition: all 0.2s ease;
@@ -112,13 +118,29 @@
       gap: 6px;
     }
 
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
     .btn-primary { background-color: var(--primary); color: white; }
     .btn-primary:hover { background-color: var(--primary-hover); }
-    .btn-primary.playing { background-color: #ef4444; }
+    .btn-primary.playing { background-color: #9f1239; }
 
-    .btn-secondary { background-color: #f1f5f9; color: #334155; }
-    .btn-secondary:hover { background-color: #e2e8f0; }
+    .btn-secondary { background-color: #fff1f2; color: #9f1239; }
+    .btn-secondary:hover { background-color: #ffe4e6; }
 
+    .btn-nav {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      padding: 8px 12px;
+      font-size: 0.88rem;
+      border: 1px solid var(--border);
+    }
+    .btn-nav:hover { background-color: #ffe4e6; }
+
+    /* 다이얼로그 카드 */
     .dialogue-list { display: flex; flex-direction: column; gap: 16px; }
 
     .card {
@@ -132,7 +154,7 @@
 
     .card.active-playing {
       border-color: var(--primary);
-      background-color: #fff1f2;
+      background-color: #fff5f6;
       transform: scale(1.008);
     }
 
@@ -150,7 +172,7 @@
       height: 32px;
       border-radius: 8px;
       background-color: var(--primary-light);
-      color: var(--primary-hover);
+      color: var(--primary);
       border: none;
       display: flex;
       align-items: center;
@@ -185,16 +207,16 @@
     .actions-wrap { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 
     .btn-record {
-      background-color: #fef2f2;
-      color: #dc2626;
-      border: 1px solid #fecaca;
+      background-color: #fff1f2;
+      color: var(--primary);
+      border: 1px solid #fecdd3;
       padding: 7px 12px;
       border-radius: 8px;
       font-size: 0.85rem;
     }
-    .btn-record:hover { background-color: #fee2e2; }
+    .btn-record:hover { background-color: #ffe4e6; }
     .btn-record.recording {
-      background-color: #dc2626;
+      background-color: var(--primary);
       color: white;
       animation: pulse 1.2s infinite;
     }
@@ -209,19 +231,21 @@
       font-size: 0.8rem;
       color: var(--text-sub);
       text-decoration: none;
-      background: #f1f5f9;
+      background: #f8fafc;
       padding: 6px 9px;
       border-radius: 8px;
+      border: 1px solid #e2e8f0;
     }
-    .yt-link:hover { background: #e2e8f0; color: #0f172a; }
+    .yt-link:hover { background: #f1f5f9; color: #0f172a; }
 
+    /* 말하기 분석 결과 패널 */
     .analysis-panel {
       display: none;
       margin-top: 14px;
       padding: 14px;
       border-radius: 12px;
-      background: #f8fafc;
-      border: 1px solid #cbd5e1;
+      background: #fff8f8;
+      border: 1px solid #fecdd3;
     }
     .analysis-panel.show { display: block; }
 
@@ -243,12 +267,13 @@
       padding: 8px 12px;
       background: white;
       border-radius: 8px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid #fecdd3;
       line-height: 1.5;
     }
     .match-word { color: #16a34a; font-weight: 700; }
-    .miss-word { color: #dc2626; text-decoration: line-through; margin-right: 4px; }
+    .miss-word { color: #e11d48; text-decoration: line-through; margin-right: 4px; }
 
+    /* 영어 정답 패널 */
     .en-panel {
       display: none;
       margin-top: 14px;
@@ -268,29 +293,29 @@
     .en-text { font-size: 1.15rem; font-weight: 700; color: #0f172a; }
 
     .btn-tts {
-      background-color: #eff6ff;
-      color: #2563eb;
+      background-color: var(--primary-light);
+      color: var(--primary);
       padding: 6px 11px;
       font-size: 0.85rem;
       border-radius: 6px;
       flex-shrink: 0;
     }
-    .btn-tts:hover { background-color: #dbeafe; }
+    .btn-tts:hover { background-color: #ffe4e6; }
 
     .note-box {
-      background-color: #f8fafc;
+      background-color: #fff9f9;
       border-left: 4px solid var(--primary);
       padding: 10px 14px;
       border-radius: 6px;
       font-size: 0.88rem;
     }
-    .note-title { font-weight: 700; color: #334155; margin-bottom: 4px; }
+    .note-title { font-weight: 700; color: #9f1239; margin-bottom: 4px; }
 
     .extras-list {
       list-style: none;
       margin-top: 8px;
       padding-top: 8px;
-      border-top: 1px solid #e2e8f0;
+      border-top: 1px solid #fecdd3;
       display: flex;
       flex-direction: column;
       gap: 5px;
@@ -304,13 +329,13 @@
     .extra-item strong { color: #0f172a; }
 
     .btn-mini-tts {
-      background: #e2e8f0;
-      color: #334155;
+      background: #ffe4e6;
+      color: #9f1239;
       padding: 2px 7px;
       font-size: 0.75rem;
       border-radius: 4px;
     }
-    .btn-mini-tts:hover { background: #cbd5e1; }
+    .btn-mini-tts:hover { background: #fecdd3; }
   </style>
 </head>
 <body>
@@ -318,13 +343,14 @@
 <div class="container">
   <header>
     <div class="header-top">
-      <h1 id="lectureTitle">🌸 DAY 001 : 봄꽃나들이</h1>
+      <h1 id="lectureTitle">📕 DAY 001 : 얼리 어답터</h1>
       <div class="lecture-select-box">
-        <label for="lectureSelect" style="font-weight:700; font-size:0.9rem;">강의 선택:</label>
+        <button id="headerPrevBtn" class="btn-nav" onclick="navLecture(-1)" title="이전 강의">◀ 이전</button>
         <select id="lectureSelect" onchange="changeLecture(this.value)"></select>
+        <button id="headerNextBtn" class="btn-nav" onclick="navLecture(1)" title="다음 강의">다음 ▶</button>
       </div>
     </div>
-    <p class="desc">한글 문장을 보고 우측 [🎙️ 말하기]를 눌러 영작을 테스트하세요! AI가 인식 후 원문과 비교 분석해 줍니다.</p>
+    <p class="desc">한글 문장을 보고 [🎙️ 말하기]를 눌러 영작을 말해보세요. 3초간 말이 없거나 [⏹️ 완료]를 누르면 AI가 즉시 비교 분석합니다.</p>
     <div id="voiceStatus" class="voice-status">음성 엔진 준비 중...</div>
   </header>
 
@@ -353,12 +379,15 @@
   let maleVoice = null;
   let recognition = null;
   let activeRecordingIdx = null;
+  let speechSilenceTimer = null;
+  let accumulatedTranscript = "";
 
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (SpeechRecognition) {
     recognition = new SpeechRecognition();
     recognition.lang = 'en-US';
-    recognition.interimResults = false;
+    recognition.continuous = true;
+    recognition.interimResults = true;
     recognition.maxAlternatives = 1;
   }
 
@@ -373,7 +402,7 @@
 
     const statusEl = document.getElementById("voiceStatus");
     if (femaleVoice && maleVoice) {
-      statusEl.textContent = `🎙️ TTS 장착 완료: 여성(A) [${femaleVoice.name.split(' ')[0]}] / 남성(B) [${maleVoice.name.split(' ')[0]}]`;
+      statusEl.textContent = `🎙️ TTS 음성 연동 완료: 여성(A) [${femaleVoice.name.split(' ')[0]}] / 남성(B) [${maleVoice.name.split(' ')[0]}]`;
     } else {
       statusEl.textContent = `🎙️ 기본 TTS 엔진 준비 완료 (피치 조절 모드)`;
     }
@@ -387,13 +416,30 @@
     select.innerHTML = lectures.map((lec, idx) => `
       <option value="${idx}">${lec.dayFormatted} : ${lec.title}</option>
     `).join("");
+    updateNavButtons();
+  }
+
+  function updateNavButtons() {
+    const prevBtn = document.getElementById("headerPrevBtn");
+    const nextBtn = document.getElementById("headerNextBtn");
+    if (prevBtn) prevBtn.disabled = (currentLectureIndex <= 0);
+    if (nextBtn) nextBtn.disabled = (currentLectureIndex >= lectures.length - 1);
+  }
+
+  function navLecture(delta) {
+    const targetIdx = currentLectureIndex + delta;
+    if (targetIdx >= 0 && targetIdx < lectures.length) {
+      document.getElementById("lectureSelect").value = targetIdx;
+      changeLecture(targetIdx);
+    }
   }
 
   function changeLecture(index) {
     if (isPlayingAll) stopPlayAll();
     currentLectureIndex = parseInt(index);
     const lec = lectures[currentLectureIndex];
-    document.getElementById("lectureTitle").textContent = `${lec.dayFormatted} : ${lec.title}`;
+    document.getElementById("lectureTitle").textContent = `📕 ${lec.dayFormatted} : ${lec.title}`;
+    updateNavButtons();
     renderDialogues();
   }
 
@@ -407,7 +453,7 @@
           ${item.extras.map(ex => `
             <li class="extra-item">
               <span>➕ <strong>${ex.en}</strong> : ${ex.kr}</span>
-              <button class="btn-mini-tts" onclick="speakText('${ex.en.replace(/'/g, "\'")}', '${item.role}')">🔊 듣기</button>
+              <button class="btn-mini-tts" onclick="speakText('${ex.en.replace(/'/g, "\\'")}', '${item.role}')">🔊 듣기</button>
             </li>
           `).join("")}
         </ul>
@@ -438,7 +484,7 @@
               <span>🗣️ 내 발화 분석 결과</span>
               <span class="score-badge" id="score-${idx}">일치도: -%</span>
             </div>
-            <div class="speech-transcript" id="transcript-${idx}">인식된 문장: </div>
+            <div class="speech-transcript" id="transcript-${idx}">인식 중...</div>
             <div class="diff-box" id="diff-${idx}"></div>
           </div>
 
@@ -559,32 +605,75 @@
     }
 
     if (activeRecordingIdx !== null) {
-      recognition.stop();
+      if (activeRecordingIdx === idx) {
+        finishSpeaking(idx);
+      } else {
+        recognition.stop();
+      }
       return;
     }
 
     activeRecordingIdx = idx;
+    accumulatedTranscript = "";
+    if (speechSilenceTimer) clearTimeout(speechSilenceTimer);
+
     const btn = document.getElementById(`rec-btn-${idx}`);
     btn.classList.add("recording");
-    btn.innerHTML = "🔴 듣는 중...";
+    btn.innerHTML = "⏹️ 말하기 완료";
+
+    const panel = document.getElementById(`analysis-${idx}`);
+    panel.classList.add("show");
+    document.getElementById(`transcript-${idx}`).innerHTML = `<strong>인식 중...</strong> <span style="color:#e11d48;">말씀해 보세요.</span>`;
 
     recognition.onresult = (event) => {
-      const userSpoken = event.results[0][0].transcript;
-      analyzeSpeech(idx, userSpoken);
+      let interim = "";
+      let final = "";
+
+      for (let i = 0; i < event.results.length; ++i) {
+        if (event.results[i].isFinal) {
+          final += event.results[i][0].transcript + " ";
+        } else {
+          interim += event.results[i][0].transcript;
+        }
+      }
+
+      accumulatedTranscript = (final + interim).trim();
+      document.getElementById(`transcript-${idx}`).innerHTML = `<strong>인식된 문장:</strong> "${accumulatedTranscript}"`;
+
+      if (speechSilenceTimer) clearTimeout(speechSilenceTimer);
+      speechSilenceTimer = setTimeout(() => {
+        finishSpeaking(idx);
+      }, 3000);
     };
 
     recognition.onerror = (event) => {
       console.error(event.error);
-      alert("음성 인식 오류: " + event.error);
+      if (event.error !== "no-speech") {
+        alert("음성 인식 오류: " + event.error);
+      }
       resetRecButton(idx);
+      activeRecordingIdx = null;
     };
 
     recognition.onend = () => {
+      if (activeRecordingIdx !== null && accumulatedTranscript) {
+        analyzeSpeech(idx, accumulatedTranscript);
+      }
       resetRecButton(idx);
       activeRecordingIdx = null;
     };
 
     recognition.start();
+  }
+
+  function finishSpeaking(idx) {
+    if (speechSilenceTimer) clearTimeout(speechSilenceTimer);
+    recognition.stop();
+    resetRecButton(idx);
+    if (accumulatedTranscript) {
+      analyzeSpeech(idx, accumulatedTranscript);
+    }
+    activeRecordingIdx = null;
   }
 
   function resetRecButton(idx) {
@@ -629,7 +718,7 @@
 
     document.getElementById(`transcript-${idx}`).innerHTML = `<strong>인식된 문장:</strong> "${userSpoken}"`;
     document.getElementById(`diff-${idx}`).innerHTML = `
-      <div style="font-size:0.82rem; color:#64748b; margin-bottom:4px;">목표 문장 대조 (<span style="color:#16a34a">초록: 일치</span>, <span style="color:#dc2626; text-decoration:line-through">빨강: 누락/오류</span>):</div>
+      <div style="font-size:0.82rem; color:#64748b; margin-bottom:4px;">목표 문장 대조 (<span style="color:#16a34a">초록: 일치</span>, <span style="color:#e11d48; text-decoration:line-through">빨강: 누락/오류</span>):</div>
       ${diffHtmlParts.join(" ")}
     `;
 
